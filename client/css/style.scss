@@ -1,0 +1,155 @@
+$lightgrey: #eeeeee;
+$bggrey: #f5f5f5;
+nav {
+  background-color: #81c784;
+  .navbar-brand {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar-brand:hover {
+    text-decoration: none;
+    color: #0056b3;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .facebook-login {
+    margin-right: 10px;
+  }
+}
+.vote-header {
+  padding: 5px;
+  margin-top: 10px;
+  clear: both;
+  cursor: pointer;
+}
+.vote-info {
+  overflow: hidden;
+  max-height: 0;
+  background: $bggrey;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.show {
+  max-height: 1000px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.marker {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  position: absolute;
+  margin-left: -60px;
+}
+ul.vote-items {
+  padding-top: 10px;
+}
+/*
+ul.vote-items {
+  margin-left: 5px;
+  margin-top: 10px;
+  list-style: none;
+  line-height: 2em;
+  vertical-align: middle;
+  word-wrap: break-word;
+  .list-text {
+    vertical-align: top;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .marker {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    position: absolute;
+    margin-left: -35px;
+  }
+}*/
+p {
+  font-size: 20px;
+}
+.chart-area {
+  max-width: 300px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.svg-container {
+	display: inline-block;
+  text-align: center;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+	svg.chart {
+	  	position: absolute;
+    	top: 0;
+    	left: 0;
+      width: 100%;
+	}
+}
+form.submit-vote {
+  margin-top: 10px;
+  
+}
+.toolTip {
+  position: fixed;
+  font-size: 1em;
+  width:  auto;
+  height: auto;
+  pointer-events: none;
+  padding: 6px;
+  background-color: $lightgrey;
+  opacity: 0.9;
+  span {
+    line-height: 1em;
+  }
+}
+.footer {
+  margin: 20px auto;
+}
+.list-delete-button {
+  float: right;
+}
+.fa-twitter {
+  color: white;
+}
+.delete-btn {
+  margin-right: 10px;
+}
+button {
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  form.submit-vote {
+    select{
+     display: block; 
+    }
+    button.btn {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+  }
+  /*ul.vote-items {
+    width: 45%;
+    float: left;
+  }
+  .svg-container {
+    float: right;
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  form .submit-vote {
+    width: 45%;
+    float: left;
+  }*/
+}
